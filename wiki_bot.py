@@ -4,8 +4,8 @@ from sklearn.feature_extraction.text import \
     TfidfVectorizer  # convert a collection of raw documents to a matrix of TF-IDF features
 from sklearn.metrics.pairwise import cosine_similarity
 
-from src.greeters.baseline_greeter import baseline_greeter
-from src.tokenizers.baseline_tokenizer import baseline_tokenizer
+from greeters.baseline_greeter import baseline_greeter
+from tokenizers.baseline_tokenizer import baseline_tokenizer
 
 
 class wiki_bot():
