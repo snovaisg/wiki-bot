@@ -3,7 +3,7 @@ import random
 from nltk.corpus import stopwords
 
 
-class baseline_greeter():
+class BaslineGreeter:
     def __init__(self, language="English"):
         self.stopwords = set(stopwords.words(language))
 

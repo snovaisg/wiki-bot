@@ -4,13 +4,13 @@ from sklearn.feature_extraction.text import \
     TfidfVectorizer  # convert a collection of raw documents to a matrix of TF-IDF features
 from sklearn.metrics.pairwise import cosine_similarity
 
-from greeters.baseline_greeter import baseline_greeter
-from tokenizers.baseline_tokenizer import baseline_tokenizer
+from greeters.baseline_greeter import BaslineGreeter
+from tokenizers.baseline_tokenizer import BaselineTokenizer
 
 
-class wiki_bot():
+class WikiBot:
 
-    def __init__(self, tokenizer=baseline_tokenizer, greeter=baseline_greeter, page="Nova University Lisbon"):
+    def __init__(self, tokenizer=BaselineTokenizer, greeter=BaslineGreeter, page="Nova University Lisbon"):
         self.page = wikipedia.page(page).content
         self.sent_tokens = nltk.sent_tokenize(self.page)  # converts to list of sentences
         self.word_tokens = nltk.word_tokenize(self.page)  # converts to list of words

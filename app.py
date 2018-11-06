@@ -1,4 +1,4 @@
-from wiki_bot import wiki_bot
+from wiki_bot import WikiBot
 
-my_bot = wiki_bot(page="Bitcoin")
+my_bot = WikiBot(page="Bitcoin")
 my_bot.play()

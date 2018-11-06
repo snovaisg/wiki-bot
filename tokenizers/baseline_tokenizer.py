@@ -4,7 +4,7 @@ import nltk
 from nltk.corpus import stopwords
 
 
-class baseline_tokenizer():
+class BaselineTokenizer:
     def __init__(self, language="English"):
         self.stopwords = set(stopwords.words(language))
 
